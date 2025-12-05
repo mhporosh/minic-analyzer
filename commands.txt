@@ -1,0 +1,10 @@
+bison -d minic.y
+flex minic.l
+gcc minic.tab.c lex.yy.c -o minic
+
+
+minic.exe < test1.c
+minic.exe < test2.c
+minic.exe < test3.c
+minic.exe < test4.c
+minic.exe < test5.c
